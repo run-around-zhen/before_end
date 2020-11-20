@@ -80,8 +80,9 @@ int main()
 		}
 		dij(s,n);
 		//cout << dist[t] << '\n';
-		ans += eps*dist[t];
+		ans += dist[t];
 	}
+	ans /= 1e5 + 1;
 	cout.precision(6);
 	cout << fixed << ans << '\n';
 	return 0;
